@@ -5,10 +5,10 @@ import { buildOnchainMetadata } from '../utils/jetton-helpers';
 
 export async function run(provider: NetworkProvider) {
     const jettonParams = {
-        name: "Nikandr Token",
-        description: "Official token of the Nikandr Surkov Youtube channel :) https://www.youtube.com/@NikandrSurkov",
-        symbol: "NIKANDR",
-        image: "https://violet-traditional-rabbit-103.mypinata.cloud/ipfs/QmUgZ3kWg36tCVSZeVKXkvsdXkn6dqigqjoBZto9Y8h37z",
+        name: "Scorpion World Token",
+        description: "SCORP is the native token of the Scorpion World ecosystem, built on the TON and Base Blockchain.",
+        symbol: "SCORP",
+        image: "https://scorpionworldtoken.xyz/static/media/Scorp.03dcab08b99d84414c4e.png",
     };
 
     // Create content Cell
@@ -23,7 +23,7 @@ export async function run(provider: NetworkProvider) {
         },
         {
             $$type: 'Mint',
-            amount: 100000000000000000n,
+            amount: 150000000000000000000n,
             receiver: provider.sender().address as Address
         }
     );
